@@ -1,9 +1,131 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<!---<head>
     <title>DevOps Spring Web</title>
 </head>
 <body>
     <h1>Welcome to DevOps Spring Boot Web App!</h1>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #e9d3c8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: #f2e3dc;
+      border-radius: 20px;
+      display: flex;
+      max-width: 900px;
+      padding: 40px;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      border-radius: 15px;
+      width: 300px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .content {
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .portfolio-label {
+      font-size: 22px;
+      color: #4a3d38;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 48px;
+      font-weight: 900;
+      color: #6b3e2e;
+      line-height: 1.2;
+    }
+
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: 20px;
+      color: #3b3b3b;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-top: 10px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .handle {
+      margin-top: 15px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .page-label {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #4a3d38;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .content {
+        margin-left: 0;
+        margin-top: 20px;
+      }
+
+      .page-label {
+        position: static;
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="/src/main/resources/static/image.png" alt="Profile Photo" />
+    <div class="content">
+      <div class="portfolio-label">My Program</div>
+      <div class="name">DIYA H S</div>
+      <div class="title">COMPUTER SCIENCE AND BUSINESS SYSTEM</div>
+      <div class="description">
+        Devops lab program 12<br>
+        
+      </div>
+     <!-- <div class="handle">@reallygreatsite</div>-->
+    </div>
+    <!--<div class="page-label">Page 1</div>-->
+  </div>
 </body>
 </html>
